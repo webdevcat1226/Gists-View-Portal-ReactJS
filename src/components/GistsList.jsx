@@ -20,7 +20,6 @@ const useStyles = makeStyles(() => ({
     gistListWrapper: {
         height: '100%',
         overflowY: 'auto',
-        paddingRight: 20,
         position: 'relative'
     }
 }))

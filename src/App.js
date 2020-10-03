@@ -12,10 +12,24 @@ import LinearIndeterminate from "./ui-kit/LoadingSpinner";
 const useStyles = makeStyles(() => ({
     pageContainer: {
         height: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+    },
+    header: {
+        height: 40,
+        margin: '10px 20px 0',
+        display: 'flex',
+        alignItems: 'center',
+        paddingLeft: '20px',
+        fontWeight: 600,
+        borderTopLeftRadius: 5,
+        borderTopRightRadius: 5,
+        background: 'lightsteelblue'
     },
     gistsContainer: {
-        height: 'calc(100% - 100px)',
+        height: 'calc(100% - 150px)',
         paddingLeft: 20,
+        paddingRight: 20,
         position: 'relative'
     },
     paginationPan: {
@@ -47,6 +61,7 @@ function App() {
 
     return (
         <div className={classes.pageContainer}>
+            <div className={classes.header}>Gists</div>
             <div className={classes.gistsContainer}>
                 {
                     isLoading && <LinearIndeterminate/>
