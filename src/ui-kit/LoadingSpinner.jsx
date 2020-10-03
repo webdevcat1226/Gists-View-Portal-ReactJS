@@ -26,7 +26,7 @@ export default function LinearIndeterminate() {
             {
                 [1, 2, 3, 4, 5].map(element => {
                     return (
-                        <div>
+                        <div key={element}>
                             <LinearProgress className={classes.spinner}/>
                             <LinearProgress className={classes.spinner} color="secondary"/>
                         </div>
